@@ -51,7 +51,18 @@ def shortest_path(grafo, origem, destino):
 	caminho_final.append(destino)
 	
 	return visitados[destino], list(caminho_final)
-	
+
+# Algoritmo 4 - Algoritmo de Dijkstra
+# function dijkstra(G,w,s)
+# Initialize-Single-Source(G,s)
+# S = Ø	
+# Q = G.V
+# while Q != Ø do:
+# 	u = Extract-Min(Q)
+# 	S = S ∪ {u}
+#	for all vértice v ∈ G.Adj[u] do:
+#		Relax(u,v,w)
+
 def dijsktra(grafo, vertice_inicial):
 	visitados = {vertice_inicial: 0}
 	caminho = {}
@@ -86,7 +97,7 @@ def dijsktra(grafo, vertice_inicial):
      
 if __name__ == '__main__':
 
-	arquivo = ler_arquivo('rotas-cem-mil.txt')
+	arquivo = ler_arquivo('rotas-cinquenta-mil')
 	vertices = gerar_vertices(arquivo)
 	grafo = Grafo()
 	
