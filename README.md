@@ -5,6 +5,3 @@ Este projeto consiste na implementação do Algoritmo de Dijkstra para a discipl
 
 As bases de dados foram extraídas do seguinte endereço: http://snap.stanford.edu/data/index.html
 
-
-![Entrada e Saida do Projeto](exemploEntrada.png "Exemplo de Entrada e Saída")
-
